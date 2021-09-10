@@ -1,0 +1,17 @@
+CREATE SCHEMA library;
+USE library;
+DROP TABLE IF EXISTS contents;
+CREATE TABLE contents (content_id INT NOT NULL, content_name CHAR(60) NOT NULL, PRIMARY KEY (content_id));
+INSERT INTO contents VALUES (10, "Los Vengadores");
+INSERT INTO contents VALUES (11, "Interestelar");
+INSERT INTO contents VALUES (12, "El viaje de Chihiro");
+INSERT INTO contents VALUES (13, "Parasitos");
+INSERT INTO contents VALUES (14, "Mas alla de los sueños");
+INSERT INTO contents VALUES (15, "The walking dead");
+INSERT INTO contents VALUES (16, "Viaje a las estrellas: la serie original");
+INSERT INTO contents VALUES (17, "Glow");
+INSERT INTO contents VALUES (18, "La casa de papel");
+INSERT INTO contents VALUES (19, "Friends");
+INSERT INTO contents VALUES (20, "Arrow");
+INSERT INTO contents VALUES (21, "The big bang theory");
+INSERT INTO contents VALUES (22, "Vikingos");

@@ -1,0 +1,7 @@
+DROP TABLE IF EXISTS books;
+CREATE TABLE books (book_id INT NOT NULL, book_content_id INT NOT NULL, book_editor_id INT NOT NULL, book_summary VARCHAR(255) NOT NULL, book_dateyear CHAR(4) NOT NULL, PRIMARY KEY (book_id), FOREIGN KEY (book_content_id) REFERENCES contents(content_id), FOREIGN KEY (book_editor_id) REFERENCES editors(editor_id));
+INSERT INTO books VALUES (1, 10, 1100, "Libro de superheroes basado en Marvel Comics. Nick Fury director de SHIELD recluta a Tony Stark, Steve Rogers, Bruce Banner y Thor para forma un equipo y evitar que Loki, hermano de Thor, se apodere de la tierra", "1990");
+INSERT INTO books VALUES (2, 11, 1200, "Libro de ciencia fición, donde la humanidad lucha por sobrevivir. La pelicula cuenta una historia de un grupo de astronautas que viajana traves de un agujero de gusano en busca de un nuevo hogar.", "2014");
+INSERT INTO books VALUES (3, 12, 1000, "Libro de animación japonesa. Es la historia de una niña de 12 años, quien se ve atrapada por un mundo mágico y sobrenatural, teniendo como misión buscar su libertad y la de sus padres y regresar al mundo real.", "2001");
+INSERT INTO books VALUES (4, 13, 1300, "Libro de drama, suspenso y humor negro. Toca temas como las diferencias sociales y vulnerabilidad del espiritu humano", "2019");
+INSERT INTO books VALUES (5, 14, 1400, "Libro de drama, narra una historia trágica de una familia, donde el padre va en busca de sus esposa al mas allá para recuperarla.", "1998");

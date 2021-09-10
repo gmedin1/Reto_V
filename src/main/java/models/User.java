@@ -1,7 +1,7 @@
 package models;
 
 
-import java.time.LocalDate;
+import java.util.Date;
 
 public class User {
 
@@ -11,7 +11,7 @@ public class User {
     private String userEmail;
     private String userPhoneNumber;
     private String userPassword;
-    private LocalDate userBirdDate;
+    private Date userBirdDate;
 
     // Constructors
     public User(String userAlias, String userPassword) {
@@ -19,7 +19,7 @@ public class User {
         this.userPassword = userPassword;
     }
 
-    public User(String userAlias, String userName, String userLastName, String userEmail, String userPhoneNumber, String userPassword, LocalDate userBirdDate) {
+    public User(String userAlias, String userName, String userLastName, String userEmail, String userPhoneNumber, String userPassword, Date userBirdDate) {
         this.userAlias = userAlias;
         this.userName = userName;
         this.userLastName = userLastName;
@@ -59,7 +59,7 @@ public class User {
         return userPassword;
     }
 
-    public LocalDate getUserBirdDate() {
+    public Date getUserBirdDate() {
         return userBirdDate;
     }
 
@@ -87,7 +87,7 @@ public class User {
         this.userPassword = userPassword;
     }
 
-    public void setUserBirdDate(LocalDate userBirdDate) {
+    public void setUserBirdDate(Date userBirdDate) {
         this.userBirdDate = userBirdDate;
     }
 

@@ -1,0 +1,10 @@
+DROP TABLE IF EXISTS magazines;
+CREATE TABLE magazines (magazine_id INT NOT NULL, magazine_content_id INT NOT NULL, magazine_seasons INT NOT NULL, magazine_episodes INT NOT NULL, PRIMARY KEY (magazine_id), FOREIGN KEY (magazine_content_id) REFERENCES contents(content_id));
+INSERT INTO magazines VALUE (1, 15, 11, 153);
+INSERT INTO magazines VALUE (2, 16, 3, 80);
+INSERT INTO magazines VALUE (3, 17, 3, 30);
+INSERT INTO magazines VALUE (4, 18, 4, 31);
+INSERT INTO magazines VALUE (5, 19, 10, 236);
+INSERT INTO magazines VALUE (6, 20, 8, 170);
+INSERT INTO magazines VALUE (7, 21, 12, 279);
+INSERT INTO magazines VALUE (8, 22, 6, 79);

@@ -1,0 +1,12 @@
+SELECT "Consulta 1";
+SELECT content_name FROM contents ORDER BY content_name ASC;
+SELECT "Consulta 2";
+SELECT  contents.content_name, books.book_summary, books.book_dateyear FROM contents INNER JOIN books ON contents.content_id = books.book_content_id WHERE books.book_dateyear > "2000" ORDER BY contents.content_name ASC;
+SELECT "Consulta 3";
+SELECT contents.content_name FROM contents INNER JOIN books ON contents.content_id = books.book_content_id WHERE books.book_editor_id = 1400;
+SELECT "Consulta 4";
+SELECT contents.content_name FROM contents INNER JOIN publications ON contents.content_id = publications.publication_content_id WHERE publications.publication_user_alias = "lucky" ORDER BY contents.content_name ASC;
+SELECT "Consulta 5";
+SELECT  publications.publication_user_alias, users.user_name, users.user_last_name FROM publications INNER JOIN users ON publications.publication_user_alias = users.user_alias WHERE publications.publication_content_id = 11 ORDER BY publications.publication_user_alias ASC;
+SELECT "Consulta 6";
+SELECT COUNT(book_content_id) FROM books WHERE book_dateyear > "2000";
